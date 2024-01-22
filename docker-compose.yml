@@ -39,7 +39,7 @@ services:
       - "./etc:/etc/monocle:z"
   elastic:
     environment:
-      ES_JAVA_OPTS: "-Xms${COMPOSE_ES_XMS:-2012m} -Xmx${COMPOSE_ES_XMX:-2012m}"
+      ES_JAVA_OPTS: "-Xms${COMPOSE_ES_XMS:-2048m} -Xmx${COMPOSE_ES_XMX:-2048m}"
       discovery.type: single-node
     expose:
       - 9200
