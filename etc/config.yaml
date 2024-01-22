@@ -1,0 +1,26 @@
+---
+workspaces:
+  - name: monocle
+    crawlers:
+      - name: github-coursera
+        provider:
+          github_organization: webedx-spark
+          github_repositories:
+            - academic-discipline-application
+            - coursera-secure-evaluation-browser
+            - coursera-secure-evaluation-browser-native-modules
+            - curriculum-builder-application
+            - honorlock-application
+            - honorlock-events-application
+            - idv-vendor-application
+            - integrity
+            - integrity-application
+            - integrity-check-application
+            - integrity-framework-application
+            - similarity-consumer-application
+            - simtext-application
+            - turnitin-tenant-application
+            - user-verification-application
+            - vericite
+            - verification-application
+        update_since: '2023-07-01'
